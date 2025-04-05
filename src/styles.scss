@@ -1,43 +1,49 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+    height: 100%;
+}
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
 
 button {
-  --mdc-filled-button-container-shape: 4px
+    --mdc-filled-button-container-shape: 4px;
 }
 
 .hljs-comment {
-  color: red;
+    color: red;
 }
 
 .code-block {
-  background-color: #282c34;
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
+    background-color: #282c34;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 
 .language-typescript {
-  font-size: 20px;
-  padding: 10px;
-  margin: 0px;
-  margin-top: -10px;
+    font-size: 20px;
+    padding: 10px;
+    margin: 0px;
+    margin-top: -10px;
 }
 
 .code-bg {
-  margin-top: 20px;
-  background: rgb(40, 44, 52);
-  // width: 40%;
-  display: flex;
-  flex-direction: column;
+    margin-top: 20px;
+    background: rgb(40, 44, 52);
+    // width: 40%;
+    display: flex;
+    flex-direction: column;
 }
 
 .text {
-  font-size: 20px;
-  display: flex;
-  align-items: baseline;
-  .language-typescript {
-    font-size: 16px !important;
-    padding: 4px;
-  }
+    font-size: 20px;
+    display: flex;
+    align-items: baseline;
+    .language-typescript {
+        font-size: 16px !important;
+        padding: 4px;
+    }
 }

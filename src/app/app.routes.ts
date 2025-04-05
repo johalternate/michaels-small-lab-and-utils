@@ -10,20 +10,20 @@ export const routes: Routes = [
         children: [
             {
                 path: 'unsorted',
-                component: UnsortedComponent
+                component: UnsortedComponent,
             },
             {
                 path: 'rxjs',
-                component: RxjsComponent
+                component: RxjsComponent,
             },
             {
                 path: 'links',
-                component: LinksComponent
+                component: LinksComponent,
             },
             {
                 path: 'base-64',
-                component: Base64Component
-            }
-        ]
-    }
+                component: Base64Component,
+            },
+        ],
+    },
 ];
