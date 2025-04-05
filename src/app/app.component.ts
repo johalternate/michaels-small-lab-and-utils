@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { RouterModule, RouterOutlet } from '@angular/router';
+import { Component } from '@angular/core'
+import { RouterModule, RouterOutlet } from '@angular/router'
 
 @Component({
     selector: 'app-root',
@@ -9,6 +9,7 @@ import { RouterModule, RouterOutlet } from '@angular/router';
         <button routerLink="links">Links</button>
         <button routerLink="unsorted">Unsorted</button>
         <button routerLink="base-64">Base 64</button>
+        <button routerLink="let">{{ lett }}</button>
 
         <section>
             <h1>Michael's Lab/Devtools</h1>
@@ -23,4 +24,6 @@ import { RouterModule, RouterOutlet } from '@angular/router';
     `,
     styles: ``,
 })
-export class AppComponent {}
+export class AppComponent {
+    lett = '@let'
+}

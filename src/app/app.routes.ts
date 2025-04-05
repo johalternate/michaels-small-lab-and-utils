@@ -1,8 +1,9 @@
-import { Routes } from '@angular/router';
-import { UnsortedComponent } from './unsorted/unsorted.component';
-import { RxjsComponent } from './rxjs/rxjs.component';
-import { LinksComponent } from './links/links.component';
-import { Base64Component } from './base-64.component';
+import { Routes } from '@angular/router'
+import { UnsortedComponent } from './unsorted/unsorted.component'
+import { RxjsComponent } from './rxjs/rxjs.component'
+import { LinksComponent } from './links/links.component'
+import { Base64Component } from './base-64.component'
+import { LetComponent } from './let/let.component'
 
 export const routes: Routes = [
     {
@@ -24,6 +25,10 @@ export const routes: Routes = [
                 path: 'base-64',
                 component: Base64Component,
             },
+            {
+                path: 'let',
+                component: LetComponent,
+            },
         ],
     },
-];
+]
