@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 
 @Component({
-    selector: 'app-links',
+    selector: 'app-common-links',
     imports: [MatButtonModule],
     template: `
     @for (link of links; track $index) {
@@ -13,7 +13,7 @@ import { MatButtonModule } from '@angular/material/button';
   `,
     styles: ``
 })
-export class LinksComponent {
+export class CommonLinksComponent {
   links: { title: string; url: string }[] = [
     {
       title: 'Material',
