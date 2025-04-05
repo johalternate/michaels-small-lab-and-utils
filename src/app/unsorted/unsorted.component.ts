@@ -1,9 +1,9 @@
-import { ChangeDetectionStrategy, Component, signal } from '@angular/core';
-import { FormsModule } from '@angular/forms';
-import { SignalExamplsComponent } from '../temp-signal-tutorial-clone/signal-exampls.component';
-import { MatButtonModule } from '@angular/material/button';
-import { MatExpansionModule } from '@angular/material/expansion';
-import { CodeStyledComponent } from '../code-styled.component';
+import { ChangeDetectionStrategy, Component, signal } from '@angular/core'
+import { FormsModule } from '@angular/forms'
+import { SignalExamplsComponent } from '../temp-signal-tutorial-clone/signal-exampls.component'
+import { MatButtonModule } from '@angular/material/button'
+import { MatExpansionModule } from '@angular/material/expansion'
+import { CodeStyledComponent } from '../code-styled.component'
 
 @Component({
     selector: 'app-unsorted',
@@ -38,5 +38,5 @@ import { CodeStyledComponent } from '../code-styled.component';
     changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class UnsortedComponent {
-    $showSignalExamples = signal(false);
+    $showSignalExamples = signal(false)
 }
