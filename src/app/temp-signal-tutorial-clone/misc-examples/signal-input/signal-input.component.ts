@@ -3,13 +3,12 @@ import {HighlightJsDirective} from "ngx-highlight-js";
 import {FormsModule} from "@angular/forms";
 
 @Component({
-  selector: 'app-child',
-  standalone: true,
-  template: `
+    selector: 'app-child',
+    template: `
     <pre highlight-js lang="typescript">$value = input.required&lt;string&gt;(); // {{ $value() }}</pre>
     <pre highlight-js lang="typescript">{{valueScreamingStr}} // {{ $valueScreaming() }}</pre>
   `,
-  imports: [HighlightJsDirective]
+    imports: [HighlightJsDirective]
 })
 export class Child {
   $value = input.required<string>();
@@ -18,10 +17,9 @@ export class Child {
 }
 
 @Component({
-  selector: 'app-signal-input',
-  standalone: true,
-  imports: [Child, FormsModule],
-  template: `
+    selector: 'app-signal-input',
+    imports: [Child, FormsModule],
+    template: `
     <div id="signal-input-example">
       <h2>Signal Input</h2>
       <div>
@@ -32,7 +30,7 @@ export class Child {
       <app-child [$value]="val.value"/>
     </div>
   `,
-  styles: `
+    styles: `
     #signal-input-example {
       display: flex;
       flex-direction: column;

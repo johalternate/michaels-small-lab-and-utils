@@ -7,10 +7,9 @@ import {JsonPipe} from "@angular/common";
 import {MatButton} from "@angular/material/button";
 
 @Component({
-  selector: 'app-comparator-types',
-  standalone: true,
-  imports: [MatSelectModule, MatFormFieldModule, ReactiveFormsModule, JsonPipe, MatButton],
-  template: `
+    selector: 'app-comparator-types',
+    imports: [MatSelectModule, MatFormFieldModule, ReactiveFormsModule, JsonPipe, MatButton],
+    template: `
     <div class="example">
       <h2>Reactive Forms</h2>
       <p>Hand rolled utility to sync up to reactive form value, status, pristine, and touched.</p>
@@ -53,7 +52,7 @@ import {MatButton} from "@angular/material/button";
       </form>
     </div>
   `,
-  styles: `
+    styles: `
     .example {
       display: flex;
       flex-direction: column;

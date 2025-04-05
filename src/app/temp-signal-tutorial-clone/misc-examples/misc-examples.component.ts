@@ -7,10 +7,9 @@ import {ComparatorTypesComponent} from "./comparator-types/comparator-types.comp
 import {HttpAndSignalsComponent} from "./http.component";
 
 @Component({
-  selector: 'app-misc-examples',
-  standalone: true,
-  imports: [JsonPipe, MatButtonModule, HighlightJsDirective, SignalInputComponent, ComparatorTypesComponent, AsyncPipe, HttpAndSignalsComponent],
-  template: `
+    selector: 'app-misc-examples',
+    imports: [JsonPipe, MatButtonModule, HighlightJsDirective, SignalInputComponent, ComparatorTypesComponent, AsyncPipe, HttpAndSignalsComponent],
+    template: `
     <div id="double-example">
       <h2>Setting Signal Values</h2>
       <div class="text">Updating a signal with
@@ -32,7 +31,7 @@ import {HttpAndSignalsComponent} from "./http.component";
     <app-comparator-types />
     <app-http-and-signals />
   `,
-  styles: `
+    styles: `
     #double-example {
       display: flex;
       flex-direction: column;

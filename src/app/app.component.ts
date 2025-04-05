@@ -14,21 +14,20 @@ import { MatExpansionModule } from '@angular/material/expansion';
 import {CodeStyledComponent} from "./code-styled.component";
 
 @Component({
-  selector: 'app-root',
-  standalone: true,
-  imports: [
-    RouterOutlet,
-    FormsModule,
-    JsonPipe,
-    ContentCreatorsComponent,
-    LinksComponent,
-    Base64Component,
-    SignalExamplsComponent,
-    MatButtonModule,
-    MatExpansionModule,
-    CodeStyledComponent,
-  ],
-  template: `
+    selector: 'app-root',
+    imports: [
+        RouterOutlet,
+        FormsModule,
+        JsonPipe,
+        ContentCreatorsComponent,
+        LinksComponent,
+        Base64Component,
+        SignalExamplsComponent,
+        MatButtonModule,
+        MatExpansionModule,
+        CodeStyledComponent,
+    ],
+    template: `
     <app-code-styled />
     <mat-accordion>
       <mat-expansion-panel
@@ -74,13 +73,13 @@ import {CodeStyledComponent} from "./code-styled.component";
       </section>
     </div>
   `,
-  styles: `
+    styles: `
     #app-component-root {
       display: flex;
       flex-direction: column;
       gap: 30px;
     }
-  `,
+  `
 })
 export class AppComponent {
   $showSignalExamples = signal(false);

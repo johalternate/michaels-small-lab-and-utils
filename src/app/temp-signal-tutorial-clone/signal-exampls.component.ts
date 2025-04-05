@@ -5,15 +5,14 @@ import { MiscExamplesComponent } from './misc-examples/misc-examples.component';
 import { FormEventsExampleComponent } from './form-events-example/form-events-example.component';
 
 @Component({
-  selector: 'app-signal-examples',
-  standalone: true,
-  imports: [
-    SignalsAboutComponent,
-    SignalApisComponent,
-    MiscExamplesComponent,
-    FormEventsExampleComponent,
-  ],
-  template: `
+    selector: 'app-signal-examples',
+    imports: [
+        SignalsAboutComponent,
+        SignalApisComponent,
+        MiscExamplesComponent,
+        FormEventsExampleComponent,
+    ],
+    template: `
     <h1>Signals Tutorial</h1>
     <a href="">link to source code</a>
     <app-signals-about />
@@ -21,6 +20,6 @@ import { FormEventsExampleComponent } from './form-events-example/form-events-ex
     <app-misc-examples />
     <app-form-events-example />
   `,
-  styles: ``,
+    styles: ``
 })
 export class SignalExamplsComponent {}

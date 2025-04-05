@@ -6,10 +6,9 @@ import { mergeOptions } from './utils';
 const defaultSocials = {youtube: ''}
 
 @Component({
-  selector: 'app-content-creators',
-  standalone: true,
-  imports: [MatCardModule, MatButtonModule],
-  template: `
+    selector: 'app-content-creators',
+    imports: [MatCardModule, MatButtonModule],
+    template: `
     <mat-card class="example-card" appearance="outlined">
       <mat-card-header>
         <mat-card-title>{{ $name() }}</mat-card-title>
@@ -25,11 +24,11 @@ const defaultSocials = {youtube: ''}
       </mat-card-actions>
     </mat-card>
   `,
-  styles: `
+    styles: `
     .example-card {
       max-width: 400px;
     }
-  `,
+  `
 })
 export class ContentCreatorsComponent {
   $description = input.required<string>({ alias: 'description' });

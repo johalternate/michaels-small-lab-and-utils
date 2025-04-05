@@ -2,17 +2,16 @@ import { Component } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 
 @Component({
-  selector: 'app-links',
-  standalone: true,
-  imports: [MatButtonModule],
-  template: `
+    selector: 'app-links',
+    imports: [MatButtonModule],
+    template: `
     @for (link of links; track $index) {
     <button mat-flat-button (click)="openLink(link.url)">
       {{ link.title }}
     </button>
     }
   `,
-  styles: ``,
+    styles: ``
 })
 export class LinksComponent {
   links: { title: string; url: string }[] = [

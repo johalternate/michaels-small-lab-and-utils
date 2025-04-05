@@ -1,10 +1,9 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-signal-apis',
-  standalone: true,
-  imports: [],
-  template: `
+    selector: 'app-signal-apis',
+    imports: [],
+    template: `
     <h2>Signals in Other Angular APIs</h2>
     <p>
       Continuing the theme of the previous lesson, we are holding off on going
@@ -28,6 +27,6 @@ import { Component } from '@angular/core';
       <li>Router</li>
     </ul>
   `,
-  styles: ``,
+    styles: ``
 })
 export class SignalApisComponent {}

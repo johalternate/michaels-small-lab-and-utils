@@ -5,9 +5,8 @@ import {UsersService} from "./users.service";
 import {AsyncPipe, JsonPipe} from "@angular/common";
 
 @Component({
-  selector: 'app-http-and-signals',
-  standalone: true,
-  template: `
+    selector: 'app-http-and-signals',
+    template: `
     <p><code>toSignal(this.someObservable$)</code> to access and then compute things from a signal</p>
     <p>Note how it is easier to use in the template</p>
     <pre>valueFromDatabase$ {{ valueFromDatabase$ | async | json }}</pre>
@@ -17,10 +16,10 @@ import {AsyncPipe, JsonPipe} from "@angular/common";
     <pre>derivedFromDatabase$ {{ derivedFromDatabase$ | async | json }}</pre>
     <pre>$derivedFromDatabase {{ $derivedFromDatabase() | json }}</pre>
   `,
-  imports: [
-    AsyncPipe,
-    JsonPipe
-  ]
+    imports: [
+        AsyncPipe,
+        JsonPipe
+    ]
 })
 
 export class HttpAndSignalsComponent {

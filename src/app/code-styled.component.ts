@@ -52,15 +52,14 @@ export class ReplacePipe {
 }
 
 @Component({
-  selector: 'app-live-code',
-  standalone: true,
-  template: `
+    selector: 'app-live-code',
+    template: `
     <div class="code-block">
       <pre highlight-js lang="typescript">{{ $replacement().code | replace : $replacement() }}</pre>
     </div>
   `,
-  imports: [ReplacePipe, JsonPipe, HighlightJsDirective],
-  styles: `
+    imports: [ReplacePipe, JsonPipe, HighlightJsDirective],
+    styles: `
     .code-block {
       margin-top: 0.5rem;
       margin-bottom: 0.5rem;
@@ -74,9 +73,8 @@ export class LiveCodeComponent {
 }
 
 @Component({
-  selector: 'app-code-styled',
-  standalone: true,
-  template: `
+    selector: 'app-code-styled',
+    template: `
     <button (click)="$number.set($number() + 1)">Increase Number</button>
     <div class="code-block">
       <app-live-code [replacement]="numberReplacement()"/>
@@ -88,7 +86,7 @@ export class LiveCodeComponent {
       <app-live-code [replacement]="stuffCapsReplacement()"/>
     </div>
   `,
-  imports: [ReplacePipe, JsonPipe, LiveCodeComponent],
+    imports: [ReplacePipe, JsonPipe, LiveCodeComponent]
 })
 export class CodeStyledComponent {
   $number = signal(3);

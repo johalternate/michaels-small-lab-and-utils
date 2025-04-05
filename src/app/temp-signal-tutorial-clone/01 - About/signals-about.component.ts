@@ -7,16 +7,15 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
 @Component({
-  selector: 'app-signals-about',
-  standalone: true,
-  imports: [
-    MatFormFieldModule,
-    FormsModule,
-    MatInputModule,
-    MatSelectModule,
-    JsonPipe,
-  ],
-  template: `
+    selector: 'app-signals-about',
+    imports: [
+        MatFormFieldModule,
+        FormsModule,
+        MatInputModule,
+        MatSelectModule,
+        JsonPipe,
+    ],
+    template: `
     <h2>About Signals</h2>
     <p>
       Signals are one of the most powerful ways to manage component state in all
@@ -85,14 +84,14 @@ $nameAndTitle(): {{
       signal value changing) logs anytime a signal value changes.
     </p>
   `,
-  styles: `
+    styles: `
     #form-and-signals {
         display: flex;
         align-items: center;
         justify-content: center;
         gap: 10px;
     }
-  `,
+  `
 })
 export class SignalsAboutComponent {
   // Lower case `signal` are given initial values, and can be set with:

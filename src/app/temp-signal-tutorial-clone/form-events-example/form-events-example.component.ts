@@ -5,10 +5,9 @@ import {allEventsObservable, allEventsSignal} from "../../form-events";
 import {HighlightJsDirective} from "ngx-highlight-js";
 
 @Component({
-  selector: 'app-form-events-example',
-  standalone: true,
-  imports: [ReactiveFormsModule, JsonPipe, AsyncPipe, HighlightJsDirective],
-  template: `
+    selector: 'app-form-events-example',
+    imports: [ReactiveFormsModule, JsonPipe, AsyncPipe, HighlightJsDirective],
+    template: `
     <input [formControl]="form" name="firstName" autocomplete="off" />
 <!--    <pre>{{ form$ | async | json }}</pre>-->
 
@@ -26,7 +25,7 @@ dirty: boolean; // {{$form().dirty | json}}
 untouched: boolean; // {{$form().untouched | json}}
     </pre>
   `,
-  styles: `
+    styles: `
     input {
       width: 99%;
     }

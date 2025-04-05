@@ -6,16 +6,15 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 
 @Component({
-  selector: 'app-base-64',
-  standalone: true,
-  imports: [
-    FormsModule,
-    MatFormFieldModule,
-    MatInputModule,
-    ClipboardModule,
-    MatButtonModule,
-  ],
-  template: `
+    selector: 'app-base-64',
+    imports: [
+        FormsModule,
+        MatFormFieldModule,
+        MatInputModule,
+        ClipboardModule,
+        MatButtonModule,
+    ],
+    template: `
     <div id="base-64">
       <div class="base-64-type">
         <mat-form-field>
@@ -50,7 +49,7 @@ import { MatInputModule } from '@angular/material/input';
       </div>
     </div>
   `,
-  styles: `
+    styles: `
       #base-64 {
         display: flex;
         align-items: flex-start;
@@ -70,7 +69,7 @@ import { MatInputModule } from '@angular/material/input';
         text-wrap: wrap;
         word-break:break-all;
       }
-  `,
+  `
 })
 export class Base64Component {
   $preEncode = signal<string | undefined>(undefined);
