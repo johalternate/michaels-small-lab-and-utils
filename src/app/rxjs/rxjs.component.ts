@@ -1,12 +1,6 @@
-import { AsyncPipe, JsonPipe } from '@angular/common';
-import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { BehaviorSubject, Observable, of, switchMap } from 'rxjs';
-
-type UserInfo = {
-    id: number;
-    name: string;
-    hobbies: string;
-};
+import { AsyncPipe, JsonPipe } from '@angular/common'
+import { ChangeDetectionStrategy, Component } from '@angular/core'
+import { BehaviorSubject, Observable, of, switchMap } from 'rxjs'
 @Component({
     selector: 'app-rxjs',
     imports: [AsyncPipe, JsonPipe],
@@ -16,22 +10,30 @@ type UserInfo = {
         <button (click)="currentUser$.next('Jeff')">Set Jeff</button>
 
         <pre>{{ userInfo$ | async | json }}</pre>
+
+        <h1><code>combineLatest</code></h1>
     `,
     styles: ``,
     changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class RxjsComponent {
-    currentUser$ = new BehaviorSubject<'Dave' | 'Jeff'>('Dave');
+    currentUser$ = new BehaviorSubject<'Dave' | 'Jeff'>('Dave')
 
     getUserInfo(user: 'Dave' | 'Jeff'): Observable<UserInfo> {
         const userInfo =
             user === 'Dave'
                 ? { id: 1, name: 'Dave', hobbies: 'fishing' }
-                : { id: 2, name: 'Jeff', hobbies: 'bowling' };
-        return of(userInfo);
+                : { id: 2, name: 'Jeff', hobbies: 'bowling' }
+        return of(userInfo)
     }
 
     userInfo$: Observable<UserInfo> = this.currentUser$.pipe(
-        switchMap((user) => this.getUserInfo(user)),
-    );
+        switchMap((user) => this.getUserInfo(user))
+    )
+}
+
+type UserInfo = {
+    id: number
+    name: string
+    hobbies: string
 }

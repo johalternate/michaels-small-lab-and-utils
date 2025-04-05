@@ -1,6 +1,6 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { ContentCreatorsComponent } from '../content-creators.component';
-import { CommonLinksComponent } from '../common-links.component';
+import { ChangeDetectionStrategy, Component } from '@angular/core'
+import { ContentCreatorsComponent } from '../content-creators.component'
+import { CommonLinksComponent } from '../common-links.component'
 
 @Component({
     selector: 'app-content-links',
