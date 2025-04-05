@@ -4,6 +4,7 @@ import { RxjsComponent } from './rxjs/rxjs.component'
 import { LinksComponent } from './links/links.component'
 import { Base64Component } from './base-64.component'
 import { LetComponent } from './let/let.component'
+import { MySocialsComponent } from './my-socials/my-socials.component'
 
 export const routes: Routes = [
     {
@@ -28,6 +29,10 @@ export const routes: Routes = [
             {
                 path: 'let',
                 component: LetComponent,
+            },
+            {
+                path: 'my-socials',
+                component: MySocialsComponent,
             },
         ],
     },

@@ -10,6 +10,7 @@ import { RouterModule, RouterOutlet } from '@angular/router'
         <button routerLink="unsorted">Unsorted</button>
         <button routerLink="base-64">Base 64</button>
         <button routerLink="let">{{ lett }}</button>
+        <button routerLink="my-socials">My Socials</button>
 
         <section>
             <h1>Michael's Lab/Devtools</h1>
