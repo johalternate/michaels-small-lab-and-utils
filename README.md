@@ -1,6 +1,8 @@
 # Michael's Small Lab And Utils
 
-Generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.1.0.
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/msmallest/michaels-small-lab-and-utils)
+
+Live site: https://michaels-small-lab-and-utils.web.app/
 
 ## Development server
 
