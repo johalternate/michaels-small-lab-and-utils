@@ -1,17 +1,12 @@
 import { Component } from '@angular/core'
 import { RouterModule, RouterOutlet } from '@angular/router'
+import { HeaderComponent } from "./core/layout/header/header.component";
 
 @Component({
     selector: 'app-root',
-    imports: [RouterOutlet, RouterModule],
+    imports: [RouterOutlet, RouterModule, HeaderComponent],
     template: `
-        <button routerLink="rxjs">RXJS</button>
-        <button routerLink="links">Links</button>
-        <button routerLink="unsorted">Unsorted</button>
-        <button routerLink="base-64">Base 64</button>
-        <button routerLink="let">{{ lett }}</button>
-        <button routerLink="my-socials">My Socials</button>
-
+        <app-header />
         <section>
             <h1>Michael's Lab/Devtools</h1>
             <a
